@@ -1,0 +1,78 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# Dataset and processed data
+data/
+*.npy
+*.pkl
+*.npz
+*.h5
+*.hdf5
+
+# Checkpoints and model weights
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Archives and backups
+archive/
+archive (1)/
+*.zip
+*.tar.gz
+*.rar
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Documentation artifacts (keep only main README)
+CONFIG_PRODUCTION.md
+DATA_ORGANIZATION.md
+FIX_ESPACE.md
+INSTRUCTIONS_FINALES.md
+LANCEMENT_FINAL.md
+LAUNCH_GUIDE.md
+PRET_A_LANCER.md
+RECOMMANDATION_RELANCE.md
+
+# Test files
+test_*.py
+*_test.py
+
+# Media files (if large)
+*.mp4
+*.avi
+*.mov
