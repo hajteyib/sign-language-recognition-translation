@@ -16,13 +16,13 @@ This project implements an end-to-end pipeline for recognizing and translating G
 
 ## 🎯 Results
 
-| Configuration | Val Loss | Test Loss | Training Time |
-|--------------|----------|-----------|---------------|
-| Baseline (1300 samples, 384-dim) | 4.62 | 3.46 | 1h58 |
-| Large model (1300 samples, 512-dim) | 4.62 | 3.54 | 1h42 |
-| **Final (2000 samples, 448-dim, aug)** | **4.42** | **3.32** | **1h04** |
+| Configuration | Val Loss | Test Loss | BLEU | Training Time |
+|--------------|----------|-----------|------|---------------|
+| Baseline (1300 samples, 384-dim) | 4.62 | 3.46 | 23.1 | 2h58 |
+| Large model (1300 samples, 512-dim) | 4.62 | 3.54 | 19.5 | 2h42 |
+| **Final (2000 samples, 448-dim, aug)** | **4.42** | **3.32** | **27.4** | **2h04** |
 
-**Improvements**: -4.3% validation loss, -4.0% test loss, 60% reduction in mode collapse
+**Improvements**: -4.3% validation loss, -4.0% test loss, +18.6% BLEU score, 60% reduction in mode collapse
 
 ## 🏗️ Architecture
 
@@ -206,23 +206,11 @@ where λ = 0.15 (tuned experimentally)
 ## 🛠️ Hardware
 
 All experiments conducted on:
-- **MacBook** with Apple Silicon (M1/M2)
+- **MacBook** with Apple Silicon (M1)
 - **Backend**: PyTorch MPS (Metal Performance Shaders)
-- **Training time**: ~1 hour per experiment (2000 samples, 50 epochs)
 
-## 📝 Citation
 
-If you use this code in your research, please cite:
 
-```bibtex
-@misc{slrt2025,
-  author = {El haj Samitt Ebou},
-  title = {Sign Language Recognition and Translation using Transformers},
-  year = {2025},
-  publisher = {GitHub},
-  url = {https://github.com/yourusername/sign-language-translation}
-}
-```
 
 ## 📚 References
 
@@ -242,4 +230,4 @@ Université Paris Cité
 
 ---
 
-**Note**: This implementation uses 28% of the full Phoenix-2014T dataset (2000/7096 samples) for training. Results are competitive given the limited data and compute resources.
+
